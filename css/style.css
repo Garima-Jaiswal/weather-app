@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,700&family=Nunito:wght@400;700&family=Open+Sans:ital,wght@1,300&family=Poppins&family=Roboto&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
 
+
 * {
     padding: 0;
     margin: 0;
@@ -7,22 +8,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 :root {
 
-   
     --PRIMARY-TEXT-COLOR: #0a2348;
     --SECONDARY-TEXT-COLOR: #fff;
     --PRIMARY-BG-COLOR: #0a2348;
     --SECONDARY-BG-COLOR: #f3f7f7;
     --LIGHT-BG-COLOR: #fff;
 
-    /* TEXT */
     --SMALL-TEXT: 14px;
     --LETTER-SPACING: 0.8px;
     --LIGHT-TEXT: #f4f4f4;
 
-    /* STANDERED SIZE AND PADDINGS */
     --STANDERED-PADDING: 30px;
     --STANDERED-RADIUS: 20px;
 }
@@ -33,7 +30,6 @@ body {
 }
 
 
-/* || STARTING */
 .container {
     position: relative;
     width: 100%;
@@ -596,6 +592,30 @@ nav {
     font-size: 18px;
 }
 
+/* || FOOTER */
+/* footer {
+    height: 120px;
+    width: 100%;
+    background-color: var(--PRIMARY-BG-COLOR);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    z-index: 5;
+} */
+
+/* footer .copyright {
+    color: var(--SECONDARY-TEXT-COLOR);
+    text-align: center;
+    font-size: var(--SMALL-TEXT);
+    padding: 14px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+} */
+
+
+
 /* || RESPONSIVENESS */
 @media screen and (max-width: 1020px) {
 
@@ -888,12 +908,14 @@ footer h3 {
     }
 }
 
-
+/* Add this to your existing CSS */
 .dark-mode-toggle {
     display: flex;
     align-items: center;
     margin-left: auto;
 
+
+    /* Adjust margin as needed */
 }
 
 .switch {
@@ -902,6 +924,7 @@ footer h3 {
     width: 60px;
     height: 34px;
     margin-right: 10px;
+    /* Adjust margin as needed */
 }
 
 .switch input {
@@ -932,6 +955,19 @@ footer h3 {
     border-radius: 50%;
 }
 
+/* Had initialized the dark mode here */
+body.dark-mode {
+    /* Update background and text colors for dark mode */
+    --PRIMARY-TEXT-COLOR: #ffffff;
+    --SECONDARY-TEXT-COLOR: #0a2348;
+    --PRIMARY-BG-COLOR: #1a1a1a;
+    --SECONDARY-BG-COLOR: #2b2b2b;
+    --LIGHT-BG-COLOR: #333333;
+
+    --SMALL-TEXT: 14px;
+    --LETTER-SPACING: 0.8px;
+    --LIGHT-TEXT: #f4f4f4;
+}
 
 .dark-mode .slider {
     background-color: #ffffff;
